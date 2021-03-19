@@ -14,7 +14,7 @@
 <body>
   <div class="app" id="app">
     <header class="header">
-      <a href="index.html" class="logo">
+      <a href="#" class="logo">
       <img src="img/logo.svg" alt="Логотип: КиноПульс" class="logo-image">
       </a>
     <a href="#" class="user">
@@ -32,13 +32,23 @@
     </div>
     <p class="description">Продолжение легендарного фильма из 90-х. Предстоит по-настоящему смертельная битва, где останется только сильнейший</p>   
     <div class="button-group">
-      <button class="button button-primary">Предзаказ фильма</button>
+      <a data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;" class="button button-primary">Предзаказ фильма</a>
       <a data-fancybox href="https://www.youtube.com/watch?v=1ar_V1_uatA" class="button button-default">
         <img src="img/vector.svg" alt="icon: play" class="button-icon">
         <span class="button-text">Смотреть трейлер</span>
       </a>    
     </div>
     </section>
+  </div>
+  <div style="display: none;" id="animatedModal" class="animated-modal">
+      <h2>Mortal Kombat</h2>
+      <p>2021 боевик,фентези,фантастика США</p>
+    <form action="#" method="POST" name="order" class="order">
+      <input type="text" name="Surname" placeholder="Surname..." required>
+      <input type="email" name="mail" placeholder="Email..." required>
+      <input type="text" name="Phone number" placeholder="Phone number..." required>
+      <button class="button button-primary" style="width:100%; padding: 5px 0;">Подписаться</button>
+    </form>
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/jquery.vide.min.js"></script>
